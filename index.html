@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Dados pessoais-->
+    <form action="">
+
+        <fieldset id="dados_pessoais">
+            <legend>Dados Pessoais</legend>
+            <label for="fname">Nome</label>
+            <input type="text" id="fname" name="fname">
+            <label for="nasc">Data de Nascimento</label>
+            <input type="date" id="nasc">
+            <label for="emaill">Email</label>
+            <input type="email" name="emaill" id="emaill">
+            <label for="phone">Telefone</label>
+            <input type="tel" name="phone" id="phone" placeholder="(DDD)_____-____"
+                pattern="[0-9] {2} [0-9] {5} [0-9] {4}">
+        </fieldset>
+<!--Dados acadêmicos -->
+        <fieldset id="dados_academicos">
+            <legend>Dados Acadêmicos</legend>
+            <label for="curso">Curso</label>
+            <select name="curso" id="curso">
+                <option value="ADS">ADS</option>
+                <option value="GTI">GTI</option>
+                <option value="Segurança da Informação">Segurança da Informação</option>
+                <option value="Ciência de Dados">Ciência de Dados</option>
+                <option value="Banco de Dados">Banco de Dados</option>
+            </select><br>
+
+            <div>
+                <label>Semestre</label><br>
+                <input type="radio" id="semestre" name="semestre" value="1">
+                <label for="semestre">1</label>
+                <input type="radio" id="semestre" name="semestre" value="2">
+                <label for="semestre">2</label>
+                <input type="radio" id="semestre" name="semestre" value="3">
+                <label for="semestre">3</label>
+                <input type="radio" id="semestre" name="semestre" value="4">
+                <label for="semestre">4</label>
+            </div>
+        </fieldset><br>
+        <div id="work">
+            
+            <!--Trabalho-->
+            <fieldset>
+                <label for="trabalho">Trabalha?</label>
+                <select name="trabalho" id="trabalho">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select><br><br>
+                <label for="local">Local de Trabalho:</label>
+                <input type="text" id="local" name="local"><br><br>
+                <label for="">Descreva sua experiência</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </fieldset>
+        </div>
+        <div>
+            <input type="reset" name="b2" value="Limpar">
+            <input type="submit" name="b1" value="Enviar">
+        </div>
+    </form>
+</body>
+
+</html>
